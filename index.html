@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Komunitas Game Harekat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #121212;
+      color: #ffffff;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    @keyframes fadeSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes rgbGlow {
+      0% { box-shadow: 0 0 10px #ff0000; }
+      25% { box-shadow: 0 0 10px #00ff00; }
+      50% { box-shadow: 0 0 10px #0000ff; }
+      75% { box-shadow: 0 0 10px #ff00ff; }
+      100% { box-shadow: 0 0 10px #ff0000; }
+    }
+
+    .logo {
+      width: 140px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 0 12px #00ffcc;
+      animation: fadeSlide 1s ease-out;
+    }
+
+    h1, p {
+      animation: fadeSlide 1.2s ease-out;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff);
+      background-size: 300% 300%;
+      animation: rgbGlow 3s infinite, fadeSlide 1.5s ease-out;
+      color: #fff;
+      text-decoration: none;
+      padding: 15px;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 12px;
+      font-size: 18px;
+      transition: transform 0.3s;
+    }
+
+    .link:hover {
+      transform: scale(1.05);
+      background-position: right center;
+    }
+
+    .wa-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://i.imgur.com/DfW4TOf.png" alt="Logo Harekat" class="logo">
+  <h1>Komunitas Game Harekat</h1>
+  <p>Bergabunglah bersama kami di grup WhatsApp!</p>
+
+  <a href="https://chat.whatsapp.com/FGcjIp3Le1ULYclJ70s8DZ" class="link">
+    <img src="https://i.imgur.com/yX0epwG.jpeg" alt="WA Icon" class="wa-icon">
+    Grup WhatsApp
+  </a>
+
+</body>
+</html>
